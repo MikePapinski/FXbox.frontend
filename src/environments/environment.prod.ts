@@ -5,7 +5,7 @@
  */
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:3001/api',
+  apiUrl: 'http://fxboxdemo.gear.host/api',
   testUser: {
     token: {},
     email: '',
