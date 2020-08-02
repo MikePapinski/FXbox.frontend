@@ -1,10 +1,8 @@
 name: Deploy to GitHub Pages
-
 on:
   push: 
     branches:   
       - master
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,10 +20,10 @@ jobs:
          npm install -g @angular/cli
          npm install
          ng build --prod --base-href="/"
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-          # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: dist # The folder the action should deploy.: 
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v2
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master
+        BRANCH: gh-pages
+        FOLDER: dist
