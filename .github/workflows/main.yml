@@ -13,10 +13,6 @@ jobs:
       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
-    - name: test
-      shell: bash
-      run: |
-        ls
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
@@ -30,9 +26,9 @@ jobs:
       uses: canastro/copy-action@0.0.2
       with:
         # Source file
-        source: "/home/runner/work/FXbox.frontend/CNAME"
+        source: "/CNAME"
         # Target file
-        target: "/home/runner/work/FXbox.frontend/build/CNAME" 
+        target: "/build/CNAME" 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
