@@ -52,6 +52,10 @@ export class UserComponent implements OnInit, OnDestroy {
 
   get zipCode() { return this.userForm.get('address').get('zipCode'); }
 
+  get id() { return this.userForm.get('id'); }
+
+  get role() { return this.userForm.get('role'); }
+
   mode: UserFormMode;
   setViewMode(viewMode: UserFormMode) {
     this.mode = viewMode;

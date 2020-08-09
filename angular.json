@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FXbox.frontend": {
+    "ngx-admin-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -184,5 +184,8 @@
     "@schematics/angular:directive": {
       "prefix": "ngx"
     }
+  },
+  "cli": {
+    "analytics": "f345df12-2a2a-45e0-9e86-7504a4b76604"
   }
 }

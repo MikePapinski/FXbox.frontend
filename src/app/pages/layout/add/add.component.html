@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) Akveo 2019. All Rights Reserved.
+  ~ Licensed under the Single Application / Multi Application License.
+  ~ See LICENSE_SINGLE_APP / LICENSE_MULTI_APP in the 'docs' folder for license information on type of purchased license.
+  -->
+
+<nb-card class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>First step</ng-template>
+        <h3>Step content #1</h3>
+        <button nbButton disabled nbStepperNext>prev</button>
+        <button nbButton nbStepperNext>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Second step</ng-template>
+        <h3>Step content #2</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext>next</button>
+      </nb-step>
+      <nb-step label="Third step">
+        <h3>Step content #3</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext>next</button>
+      </nb-step>
+      <nb-step [label]="labelFour">
+        <ng-template #labelFour>Fourth step</ng-template>
+        <h3>Step content #4</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton disabled nbStepperNext>next</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+

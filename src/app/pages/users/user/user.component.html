@@ -8,6 +8,8 @@
   <nb-card-header>{{mode}} user</nb-card-header>
   <nb-card-body>
     <div [formGroup]="userForm" class="container">
+
+
       <div class="form-group">
         <label for="firstName">First Name</label>
         <input nbInput id="firstName" formControlName="firstName"
@@ -79,6 +81,16 @@
       <div class="form-group" formGroupName="address">
         <label for="inputZipCode">Zip Code</label>
         <input nbInput class="form-control" id="inputZipCode" placeholder="Zip Code" formControlName="zipCode">
+      </div>
+
+      <div class="form-group" >
+        <label for="id">ID</label>
+        <input nbInput class="form-control"  placeholder="ID" formControlName="id">
+      </div>
+
+      <div class="form-group" >
+        <label for="role">Role</label>
+        <input nbInput class="form-control"  placeholder="role" formControlName="role">
       </div>
     </div>
   </nb-card-body>

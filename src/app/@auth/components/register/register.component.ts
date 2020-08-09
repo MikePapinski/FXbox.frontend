@@ -6,7 +6,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { NB_AUTH_OPTIONS, NbAuthSocialLink, NbAuthService, NbAuthResult } from '@nebular/auth';
+import { NB_AUTH_OPTIONS, NbAuthService, NbAuthResult } from '@nebular/auth';
 import { getDeepFromObject } from '../../helpers';
 import { EMAIL_PATTERN } from '../constants';
 
@@ -27,7 +27,6 @@ export class NgxRegisterComponent implements OnInit {
   redirectDelay: number = this.getConfigValue('forms.register.redirectDelay');
   showMessages: any = this.getConfigValue('forms.register.showMessages');
   strategy: string = this.getConfigValue('forms.register.strategy');
-  socialLinks: NbAuthSocialLink[] = this.getConfigValue('forms.login.socialLinks');
 
   submitted = false;
   errors: string[] = [];

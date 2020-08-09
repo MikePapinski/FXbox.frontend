@@ -3,11 +3,14 @@
  * Licensed under the Single Application / Multi Application License.
  * See LICENSE_SINGLE_APP / LICENSE_MULTI_APP in the 'docs' folder for license information on type of purchased license.
  */
-export const environment = {
-  production: true,
-  apiUrl: 'http://fxboxdemo.gear.host/api',
-  testUser: {
-    token: {},
-    email: '',
-  },
-};
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'ngx-form-layouts',
+  styleUrls: ['./status.component.scss'],
+  templateUrl: './status.component.html',
+})
+export class StatusComponent {
+
+}

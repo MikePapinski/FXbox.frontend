@@ -30,7 +30,6 @@ export class NgxLoginComponent implements OnInit {
   redirectDelay: number = this.getConfigValue('forms.login.redirectDelay');
   showMessages: any = this.getConfigValue('forms.login.showMessages');
   strategy: string = this.getConfigValue('forms.login.strategy');
-  socialLinks: NbAuthSocialLink[] = this.getConfigValue('forms.login.socialLinks');
   rememberMe = this.getConfigValue('forms.login.rememberMe');
   isEmailRequired: boolean = this.getConfigValue('forms.validation.email.required');
   isPasswordRequired: boolean = this.getConfigValue('forms.validation.password.required');
