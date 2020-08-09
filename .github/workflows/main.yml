@@ -22,13 +22,16 @@ jobs:
          npm install -g @angular/cli
          npm install
          ng build --prod --base-href="/"
+    - name: test ls
+      run: |
+         ls
     - name: Copy file
       uses: canastro/copy-action@0.0.2
       with:
         # Source file
         source: "CNAME"
         # Target file
-        target: "build/CNAME" 
+        target: "dist/CNAME" 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
