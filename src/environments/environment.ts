@@ -10,7 +10,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://fxboxdemo.gear.host/api',
+  apiUrl: 'https://fxboxdemo.gear.host/api',
   testUser: {
     // tslint:disable
     token: {
