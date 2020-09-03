@@ -2,6 +2,6 @@
 front end of the biggest app I ever made
 
 root : fxbox$123A1r
+139.59.151.167
 
-rancher kubernetes
-http://134.122.91.73:8080/
+rancher gui - http://139.59.151.167:8080/
